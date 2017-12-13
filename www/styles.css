@@ -186,18 +186,17 @@ caption {
 #header {
   min-height: 600px;
   background: url('/assets/banner.png') no-repeat;
-  background-size: 100% auto;
-  overflow: hidden;
+  background-size: 100% 100%;
+  /* overflow: hidden; */
 }
 
 #header > h1 {
   position: absolute;
   top: 0;
-  bottom: 150px;
+  bottom: 100px;
   left: 0;
   right: 0;
   margin: auto !important;
-  letter-spacing: 2px;
   height: 100px;
 }
 
@@ -207,6 +206,8 @@ caption {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-top: 1px rgba(128, 128, 128, 0.2) solid;
+  border-bottom: 1px rgba(128, 128, 128,0.2) solid;
 }
 
 #whatwedo > * {
@@ -215,15 +216,134 @@ caption {
 
 #wedo {
   text-align: left;
-  width: 350px;
+  line-height: 40px;
 }
-/* TRAVEL ========== */
 
+/* ENTERTAINMENT ========== */
+#entertainment {
+  height: 475px;
+  display: flex;
+  background-color: #f1faef;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px rgba(128, 128, 128, 0.2) solid;
+}
+
+.entertainmentItem {
+  display: flex; 
+}
+
+.entertainmentDescription {
+  width: 320px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.thumbnail {
+  height: 200px;
+  width: 200px; 
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.331);
+}
+
+/* TRAVEL ========== */
+#travel {
+  height: 450px;
+  border-bottom: 1px rgba(128, 128, 128,0.2) solid;
+  display:flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* margin: 20px; */
+}
+
+#locations {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.locationInfo {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.locationInfo > * {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+caption {
+  margin: 0 !important;
+}
 /* NEWSLETTER ========== */
+#newsletter {
+  height: 300px;
+  border-top: 1px rgba(128, 128, 128, 0.2) solid;
+  border-bottom: 1px rgba(128, 128, 128,0.2) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#newsInput{
+  margin: 20px;
+  display:flex;
+  position: relative;
+}
+
+#newsEmail {
+  position: relative;
+  height: 50px;
+  padding: 15px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+#newsEmail:focus {
+  outline: none;
+}
+
+#subscribeButton {
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  background-color: #1e3656;
+  color: white;
+  height: 50px;
+  font-size: 14px;
+  width: 200px;
+  left: 320px;
+  margin: 0;
+  font-weight: normal;
+}
+
+#subscribeButton:hover{
+  background-color: #255ba2;
+}
+
+.swal2-image {
+  height: 200px;
+  width: 200px;
+}
 
 /* FOOTER ========== */
 #footer {
+  display:flex;
   width: 100vw;
   background:#1e3656;
   height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > p {
+  /* margin: 0 auto; */
+  color:white;
+
 }
