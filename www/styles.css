@@ -1,0 +1,229 @@
+/* IMPORT FONTS ========== */
+@font-face {
+  font-family: AvenirNext;
+  src: url('./assets/Avenir Next Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url('./assets/Avenir Next Medium.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url('./assets/Avenir Next Demi Bold.otf');
+  font-weight: bold;
+}
+
+/* FONT PRE-SETS ========== */
+
+body {
+  font-family: AvenirNext;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #e43c4b;
+  letter-spacing: 0.4px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: none;
+  color: #272727;
+  letter-spacing: 0.3px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: none;
+  color: #272727;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #413d3d;
+  letter-spacing: 0.3px;
+}
+
+p, li {
+  font-size: 16px;
+  color: #1e3656;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+}
+
+caption {
+  font-weight: 300;
+  font-size: 14px;
+  color: #7c7c7c;
+  letter-spacing: 0.2px;
+}
+
+/* LOG IN / SIGN UP STYLES ========== */
+#login {
+  background: url('./assets/onboarding-bg.png') center no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 25vw;
+  margin: auto;
+  padding-top: 15% !important;
+}
+
+.ig {
+  position: relative;
+  margin: 10px;
+}
+
+.email, .password, .username {
+  position: absolute;
+  left: 10px;
+  top: 10px; 
+  height: 30px;
+}
+
+.form-control{
+  background-color: rgba(0, 0, 0, 0.2);
+  border:none;
+  border-radius: 50px;
+  height: 50px;
+  padding-left: 50px;
+}
+
+.form-control:focus{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 15%;
+  background-color: #e43c4b;
+  border-radius: 50px;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  height: 50px;
+  transition: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #a20f25;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.logNav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.logNav > * {
+  color:white !important;
+}
+
+.logNavBtn > *{
+  color: white;
+  text-decoration: none;
+}
+
+.logNavBtn > *:hover {
+  cursor: pointer;
+  color: black !important;
+  text-decoration: none;
+}
+
+/* NAVBAR ========== */
+.navbar {
+  background: transparent;
+  position: absolute;
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.navbar-brand > a, li > a {
+  color:white;
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+}
+
+.navbar-brand > a:hover, li > a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* HEADER ========== */
+#header {
+  min-height: 600px;
+  background: url('/assets/banner.png') no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+#header > h1 {
+  position: absolute;
+  top: 0;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+  letter-spacing: 2px;
+  height: 100px;
+}
+
+/* WHAT WE DO ========== */
+#whatwedo {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#whatwedo > * {
+  width: 40vw;
+}
+
+#wedo {
+  text-align: left;
+  width: 350px;
+}
+/* TRAVEL ========== */
+
+/* NEWSLETTER ========== */
+
+/* FOOTER ========== */
+#footer {
+  width: 100vw;
+  background:#1e3656;
+  height: 20vh;
+}
